@@ -1,5 +1,5 @@
 #You are given an integer,N. Your task is to print an alphabet rangoli of size.N
-#Below is the example for size 3
+#Below is the example for integer size 3
 """----c----
 --c-b-c--
 c-b-a-b-c
@@ -14,8 +14,6 @@ def print_rangoli(size):
         prelist = list(reversed(sublist[1:]))
         wholelist = prelist + sublist
         print('-'.join(wholelist).center(width, '-'))
-    # your code goes here
-
 if __name__ == '__main__':
     n = int(input("Enter the postive integer greater than 0 for alphabetic rangoli: "))
     print_rangoli(n)
